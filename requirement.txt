@@ -1,0 +1,38 @@
+Requirements:
+Need Gui to interact with exiting functions of gui.py
+tkinter gui can be a separate file ,interface with gui.py
+
+1. Market Price Box : Fetch the price from def check_positions(data): every one 30seconds once and update
+2. if "BuyLimit" or "SellLimit" of GUI is clicked ,immedeiate update the Market Price Box by taking value from check_positions(data)
+3.Between the White Box ,"Buy Limit" provide tick Box for value 1 5 10 20 25 40 (one value can be selected at a time)
+4.Between the White Box ,"Sell Limit" provide button for value 1 5 10 20 25 40 (one value can be selected at a time)
+
+5. If Buy Limit is clicked then take the "Market Price" SUM(-) tick Box value and update the While Box 
+       and pass this new value to function  def buylimit_order(price):
+
+6  If Sell Limit is clicked then take the "Market Price" Minus (-) tick Box value and update the While Box 
+       and pass this new value to function  selllimit_order(sellprice):
+
+
+7 provide click button for Cancell order,Close order, Limit order ,StopOrder ,when clicking this certain function should be called in guy.py example Cancell_order() ,limit_order(), stopOrder() etc
+
+8.provide four Box under grouped order(label) where user can enter 4 differrent numerical values limit two box to 0 and greater ,limit two other Box  for minus and plus value (user can enter minus value)
+    Add a button ClickSend when clicked assign this value to 4 variables and pass it to  def grouporder(price1,2x,3x,4x):
+
+9.Add a button "FetchData" when clicked fetch data from refresh_tokenn() and display the value fetched in GUI.
+
+
+Bottom of the GUI add this Lists[NY,DY,AY,PY] and give drop down menu and the value chosen dynamically update in a variable.
+
+
+
+
+
+10. Add Exit button so when clicked the program should stop (provide a function call for this so that if i want to add any more activity i can do before exit)
+
+11.On Top of the GUI add this tick Box  Exchang A ,Exchange B only one can be selected (tick,Button anything can be done)
+
+so when particular exhange is selected in a function decide in if else condtion  Exchang A ,Exchange B is selected here i will call other function depends on the exchange chosen.
+
+Note Program should run continuously and take user interactive input and do the operation until pgrm is closed.
+mainly BuyLimit ,SellLimit orders whenever we click it should be done ,#1 requirement should be updated every 30Seconds ,all other requirements are based on user interaction in the GUI.
